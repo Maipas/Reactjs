@@ -7,10 +7,10 @@ const estilos={
     fontSize: '3rem',
 };
 
-function Container() {
+function Container( props ) {
     return (
         <div style={estilos}> 
-            Hola mundo, esto es react
+            {props.text}
         </div>
     );
 }

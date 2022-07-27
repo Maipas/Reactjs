@@ -2,8 +2,9 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import CartWidget from '../CartWidget';
 
-function CollapsibleExample() {
+function NavBar() {
     return (
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
         <Container>
@@ -27,8 +28,8 @@ function CollapsibleExample() {
             </Nav>
             <Nav>
                 <Nav.Link href="#deets">More deets</Nav.Link>
-                <Nav.Link eventKey={2} href="#memes">
-                Dank memes
+                <Nav.Link eventKey={2} href="#compras">
+                <CartWidget />
                 </Nav.Link>
             </Nav>
             </Navbar.Collapse>
@@ -37,4 +38,4 @@ function CollapsibleExample() {
     );
 }
 
-export default CollapsibleExample;
+export default NavBar;
